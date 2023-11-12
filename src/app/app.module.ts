@@ -26,6 +26,7 @@ import { UnivFormComponent } from './Gestion/universite/univ-form/univ-form.comp
 import { DepartementComponent } from './Gestion/departement/departement.component';
 import { FormEquipeComponent } from './Gestion/equipe/form-equipe/form-equipe.component';
 import { DetailEquipeComponent } from './Gestion/equipe/detail-equipe/detail-equipe.component';
+import { EnseignantComponent } from './Gestion/enseignant/enseignant.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { DetailEquipeComponent } from './Gestion/equipe/detail-equipe/detail-equ
     DepartementComponent,
     FormEquipeComponent,
     DetailEquipeComponent,
+    EnseignantComponent,
   ],
   imports: [
     BrowserModule,
