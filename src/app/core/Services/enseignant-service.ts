@@ -7,7 +7,7 @@ import { Enseignant } from '../Models/Enseignant';
   providedIn: 'root'
 })
 export class EnseignantServiceService {
-  private API_URL ="http://localhost:8089/kaddem/enseignant/add-enseignant"
+  private API_URL ="http://192.168.33.10:8066/kaddem/enseignant/add-enseignant"
 
   constructor(private http:HttpClient) { }
   addEnseignant(enseignant: Enseignant): Observable<any> {
