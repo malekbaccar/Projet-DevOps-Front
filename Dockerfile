@@ -1,9 +1,9 @@
 # stage 1
 FROM node:14 as node
 
-WORKDIR /Kaddem-Angular
+WORKDIR /abdelmalekaccar
 
-COPY . /Kaddem-Angular
+COPY . /abdelmalekaccar
 
 RUN npm cache clean --force
 RUN npm install --force
@@ -13,4 +13,4 @@ RUN npm install @angular/cli
 # stage 2
 FROM nginx:alpine
 
-COPY --from=node /Kaddem-Angular/dist/angular-product-config /usr/share/nginx/html
+COPY --from=node /abdelmalekaccar/dist/angular-product-config /usr/share/nginx/html
